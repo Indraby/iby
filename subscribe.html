@@ -1,0 +1,31 @@
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<div class='subscribe_box'>
+<div id='subscribe-box'>
+  <p class='subs-title'>SUBSCRIBE <span class='subs-title2'>to Our Newsletter</span></p>
+                 <p>Sign up here with your email address to receive updates from this blog in your inbox.</p>
+             <div class='emailfield'>
+              <form action='//feedburner.google.com/fb/a/mailverify' method='post' onsubmit='window.open(&apos;//feedburner.google.com/fb/a/mailverify?uri=KompiAjaib&apos;, &apos;popupwindow&apos;, &apos;scrollbars=yes,width=550,height=520&apos;);return true' target='popupwindow'>
+               <span class='form-name'>
+               <input name='name' onblur='if (this.value == &quot;&quot;) {this.value = &quot;Your Name&quot;;}' onfocus='if (this.value == &quot;Your Name&quot;) {this.value = &quot;&quot;;}' type='text' value='Your Name'/></span>
+               <span class='clear'/>
+               <span class='form-email'>
+               <input name='email' onblur='if (this.value == &quot;&quot;) {this.value = &quot;Your Email&quot;;}' onfocus='if (this.value == &quot;Your Email&quot;) {this.value = &quot;&quot;;}' type='text' value='Your Email'/></span>
+<input name='uri' type='hidden' value='KompiAjaib'/>
+<input name='loc' type='hidden' value='en_US'/>
+                <span class='form-button'>
+                <input class='submitbutton' type='submit' value='Subscribe Now!'/></span>
+              </form>
+             </div>
+</div>
+              </div>
+</b:if>
+</b:includable>
+            <b:includable id='postQuickEdit' var='post'>
+  <b:if cond='data:post.editUrl'>
+    <span expr:class='&quot;item-control &quot; + data:post.adminClass'>
+      <a expr:href='&quot;//www.blogger.com//post-edit.g?blogID=&quot; + data:blog.blogId + &quot;&amp;amp;postID=&quot;+ data:post.id + &quot;&amp;amp;from=pencil&quot;' expr:title='data:top.editPostMsg'>
+        <i class='fa fa-pencil-square-o'/>
+      </a>
+    </span>
+  </b:if>
+</b:includable>
